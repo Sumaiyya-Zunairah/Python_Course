@@ -23,7 +23,7 @@
  
 # print(filtered_tokens)
 
-import spacy
+#import spacy
 
 # Load English tokenizer, tagger, parser and NER
 nlp = spacy.load("en_core_web_sm")
