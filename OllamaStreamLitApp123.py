@@ -1,11 +1,6 @@
 import streamlit as st
 from ollama import chat
 
-
-# -----------------------------
-# PAGE DESIGN
-# -----------------------------
-
 st.markdown("""
 <style>
 
@@ -21,27 +16,27 @@ st.markdown("""
         color: #0B3018 !important;
     }
 
-    /* Main title */
+
     h1 {
         color: #0B3018 !important;
         text-align: center;
         font-family: "Times New Roman", Times, serif !important;
     }
 
-    /* Header */
+
     h2 {
         color: #0B3018 !important;
         text-align: center;
         font-family: "Times New Roman", Times, serif !important;
     }
 
-    /* Normal text */
+
     p {
         color: #0B3018 !important;
         font-family: "Times New Roman", Times, serif !important;
     }
 
-    /* Text area */
+
     textarea {
         background-color: #F7FBF4 !important;
         color: #0B3018 !important;
@@ -109,9 +104,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# -----------------------------
-# OLLAMA MODEL
-# -----------------------------
 
 model_name = "llama3.2"
 
@@ -131,18 +123,11 @@ def get_response(model, message):
     return response.message.content
 
 
-# -----------------------------
-# APP TITLE
-# -----------------------------
 
 st.title(" ──.🍀 ݁˖༘⋆─Green─.🍀 ݁˖༘⋆──")
 
 st.header("✩°𓏲⋆🪲Welcome to our AI Chatbox🪲✩°𓏲⋆")
 
-
-# -----------------------------
-# CHAT FORM
-# -----------------------------
 
 with st.form("⋆𓂃 𓈒𓏸🪷˚｡⋆message⋆✴︎˚𓂃 𓈒𓏸🪷⋆"):
 
@@ -153,9 +138,7 @@ with st.form("⋆𓂃 𓈒𓏸🪷˚｡⋆message⋆✴︎˚𓂃 𓈒𓏸🪷⋆
     submit_button = st.form_submit_button("Send!⋆˚࿔")
 
 
-# -----------------------------
-# RESPONSE
-# -----------------------------
+
 
 if submit_button:
 
