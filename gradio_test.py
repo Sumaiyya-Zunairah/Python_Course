@@ -3,7 +3,6 @@ from ollama import chat
 
 model_name = "llama3.2"
 
-
 def chatbot(message, history):
     response = chat(
         model=model_name,
@@ -13,7 +12,6 @@ def chatbot(message, history):
     )
 
     return response["message"]["content"]
-
 
 with gr.Blocks(
     title="🌊 Aqua AI",
