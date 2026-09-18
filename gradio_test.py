@@ -10,6 +10,7 @@ def chatbot(message, history):
             {"role": "user", "content": message}
         ]
     )
+    
 
     return response["message"]["content"]
 
