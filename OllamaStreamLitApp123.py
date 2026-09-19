@@ -4,6 +4,7 @@ from ollama import chat
 st.markdown("""
 <style>
 
+     
     /* Overall background */
     .stApp {
         background-color: #EAF4E3;
