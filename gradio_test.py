@@ -2,6 +2,7 @@
 import gradio as gr
 from ollama import chat
 
+
 model_name = "llama3.2"
 
 def chatbot(message, history):
