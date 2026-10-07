@@ -1,4 +1,4 @@
-
+ 
 import gradio as gr
 from ollama import chat
 
